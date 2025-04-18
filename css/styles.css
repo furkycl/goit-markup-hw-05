@@ -1,0 +1,455 @@
+/* Global Styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  display: block;
+  padding: 0px 156px;
+  width: 1440px;
+}
+
+/* Header Section Styles */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #2e2f42;
+  line-height: 1.16667;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: #4d5ae5;
+}
+
+.menu {
+  margin-left: -400px;
+}
+
+.address {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navbar-list-item-a {
+  position: relative;
+  color: #2e2f42;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-list-item-a-active::after {
+  content: "";
+  text-decoration: underline;
+  width: max-content; /* Bu nedense çalışmıyor */
+  width: 50px;
+  height: 5px;
+  margin-top: 35px;
+  margin-left: -50px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: #404bbf;
+}
+
+.navbar-list-item-a:hover {
+  color: #404bbf;
+}
+
+.navbar-list-item:first-child a:active {
+  text-decoration: underline;
+}
+
+.navbar-user-info {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-user-email,
+.navbar-user-tel {
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-user-email:hover,
+.navbar-user-tel:hover {
+  cursor: pointer;
+  color: #404bbf;
+}
+
+/* Header Section Styles End */
+
+/* Main Section Styles */
+
+/* Effective Solutions Part Styles */
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  letter-spacing: 0.02em;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.container-slogan {
+  position: relative;
+  background-color: #2e2f42;
+  background: url(../images/hero-image.jpg);
+  text-align: center;
+  align-content: center;
+  height: 600px;
+}
+
+.container-slogan-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2e2f42;
+  opacity: 0.7;
+  height: 600px;
+  width: 1440px;
+  text-align: center;
+  align-content: center;
+  z-index: 1;
+}
+
+.slogan-button {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  width: 169px;
+  height: 56px;
+  z-index: 2;
+}
+
+.slogan-button {
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slogan-button:hover {
+  cursor: pointer;
+  background-color: #404bbf;
+}
+
+/* Effective Solutions Part Styles End */
+
+/* Features Part Styles */
+
+.features-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.features-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.feature-cards {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.bg-svg {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  text-align: center;
+  align-content: center;
+}
+
+.feature-icons {
+  height: 64px;
+  width: 64px;
+  justify-items: center;
+}
+
+/* Features Part Styles End */
+
+/* Our Team Part Styles */
+
+.section-team {
+  background-color: #f4f4fd;
+}
+
+.container-team {
+  height: 732px;
+  align-content: center;
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+}
+
+.ourteam-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+}
+
+.our-team-list-items {
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.team-member-pic {
+  width: 264px;
+  height: 264px;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.team-member-position {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.section-team-socialmedia-div {
+  justify-content: space-between;
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+
+.section-team-socialmedia-icons {
+  fill: #4d5ae5;
+  height: 40px;
+  width: 40px;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-team-socialmedia-icons:hover {
+  fill: #404bbf;
+  cursor: pointer;
+}
+
+/* Our Team Part Styles End */
+
+/* Our Portfolio Styles */
+
+.portfolio-header {
+  margin-top: 120px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.portfolio-list-items {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.portfolio-list-items:hover {
+  cursor: pointer;
+}
+
+.portfolio-card-content {
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  margin-top: -4px;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+}
+
+.portfolio-images {
+  width: 360px;
+  height: 300px;
+}
+
+.portfolio-card-background {
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  color: #f4f4fd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-items:hover .portfolio-card-background {
+  z-index: 1;
+  transform: translatey(0);
+}
+
+.relative {
+  position: relative;
+}
+
+.portfolio-card-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+  color: #2e2f42;
+  margin-top: 0;
+  padding-top: 32px;
+}
+
+.portfolio-card-text {
+  padding-left: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Our Portfolio Styles End */
+
+/* Main Section Styles End */
+
+/* Footer Section Styles */
+
+.section-footer {
+  background-color: #2e2f42;
+}
+
+.container-footer {
+  height: 312px;
+}
+
+.footer-wrapper {
+  height: 312px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 21px;
+  letter-spacing: 3%;
+  color: #f4f4fd;
+}
+.footer-logo-web {
+  color: #4d5ae5;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.footer-social-media-div {
+  margin-top: -70px;
+}
+
+.footer-social-media-icons-div {
+  gap: 16px;
+}
+
+.footer-social-media-text {
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-social-media-icons {
+  fill: #4d5ae5;
+  height: 40px;
+  width: 40px;
+}
+
+.footer-social-media-icons {
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-media-icons:hover {
+  cursor: pointer;
+  fill: #31d0aa;
+}
+
+.footer-social-media-icons-div {
+  display: flex;
+}
+
+/* Footer Section Styles End */
