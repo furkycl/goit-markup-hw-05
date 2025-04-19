@@ -16,7 +16,7 @@ body {
 }
 
 .is-open {
-  display: none !important;
+  display: flex !important;
 }
 
 /* Header Section Styles */
@@ -518,6 +518,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .form-dialog {
@@ -560,6 +561,8 @@ fieldset {
 
 .dialog-labels {
   position: relative;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .legend-text {
@@ -579,7 +582,7 @@ fieldset {
   margin-left: 19px;
 }
 
-.icon-fill-color {
+.dialog-labels:focus-within {
   fill: #4d5ae5;
 }
 
@@ -627,6 +630,55 @@ fieldset {
   margin-top: 14px;
   margin-bottom: 14px;
   margin-left: 19px;
+}
+/* hide checkbox */
+#agreement {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  position: relative;
+}
+
+#agreement + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+  color: #8e8f99;
+  line-height: 25px;
+}
+
+#agreement + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  outline: 2px solid #8e8f99;
+  left: 0;
+  top: 0;
+}
+
+#agreement:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  outline: 2px solid #4d5ae5;
+  left: 0;
+  top: 0;
+}
+
+#agreement:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/svgsprite/checkbox.svg#icon-checkbox);
+  background-size: contain;
+  left: 0;
+  top: 0;
 }
 
 .dialog-agreement-text {

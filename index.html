@@ -47,7 +47,7 @@
         </address>
       </div>
     </header>
-    <section class="section-form-dialog d-none">
+    <section class="section-form-dialog is-open">
       <form class="form-dialog">
         <svg class="form-dialog-icon-close" alt="closeicon">
           <use href="./images/svgsprite/icons.svg#icon-close"></use>
@@ -107,13 +107,15 @@
               >
               </textarea>
             </label>
-            <label class="agreement-label" for="agreement">
-              <input type="checkbox" name="agreement" value="ss" />
-              <p class="dialog-agreement-text">
-                I accept the terms and conditions of the
-                <a href="#somewhere">Privacy Policy</a>
-              </p>
-            </label>
+            <div class="d-flex">
+              <input type="checkbox" name="agreement" id="agreement" placeholder="" title=""/>
+              <label class="agreement-label" for="agreement"></label>
+                <p class="dialog-agreement-text">
+                  I accept the terms and conditions of the
+                  <a href="#somewhere">Privacy Policy</a>
+                </p>
+              </label>
+            </div>
             <div class="dialog-send-button-div">
               <button type="submit" class="dialog-send-button">Send</button>
             </div>
@@ -121,7 +123,6 @@
         </div>
       </form>
     </section>
-
     <main>
       <section id="effectivesolutions" class="section section-slogan">
         <div class="container container-slogan">
