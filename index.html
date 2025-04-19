@@ -47,6 +47,80 @@
         </address>
       </div>
     </header>
+    <section class="section-form-dialog d-none">
+      <form class="form-dialog">
+        <svg class="form-dialog-icon-close" alt="closeicon">
+          <use href="./images/svgsprite/icons.svg#icon-close"></use>
+        </svg>
+        <p class="form-dialog-text">
+          Leave your contacts and we will call you back
+        </p>
+        <div class="form-container">
+          <fieldset>
+            <legend class="legend-text">Name</legend>
+            <label class="dialog-labels" for="name">
+              <svg class="form-dialog-icon-name icon-fill-color" alt="nameicon">
+                <use href="./images/svgsprite/icons.svg#icon-name"></use>
+              </svg>
+              <input
+                class="dialog-input"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
+            </label>
+            <legend class="legend-text">Phone</legend>
+            <label class="dialog-labels" for="phone">
+              <svg class="form-dialog-icon-tel" alt="phoneicon">
+                <use href="./images/svgsprite/icons.svg#icon-tel"></use>
+              </svg>
+              <input
+                class="dialog-input"
+                id="phone"
+                type="number"
+                name="phone"
+                required
+              />
+            </label>
+            <legend class="legend-text">Email</legend>
+            <label class="dialog-labels" for="email">
+              <svg class="form-dialog-icon-email" alt="emailicon">
+                <use href="./images/svgsprite/icons.svg#icon-email"></use>
+              </svg>
+              <input
+                class="dialog-input"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+            </label>
+            <legend class="legend-text">Comment</legend>
+            <label class="dialog-labels" for="comment">
+              <textarea
+                class="dialog-textarea"
+                id="comment"
+                type="text"
+                name="comment"
+                placeholder="Text input"
+              >
+              </textarea>
+            </label>
+            <label class="agreement-label" for="agreement">
+              <input type="checkbox" name="agreement" value="ss" />
+              <p class="dialog-agreement-text">
+                I accept the terms and conditions of the
+                <a href="#somewhere">Privacy Policy</a>
+              </p>
+            </label>
+            <div class="dialog-send-button-div">
+              <button type="submit" class="dialog-send-button">Send</button>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </section>
 
     <main>
       <section id="effectivesolutions" class="section section-slogan">
@@ -455,6 +529,23 @@
                   </svg>
                 </div>
               </div>
+            </div>
+            <div class="footer-subscribe">
+              <label class="footer-subscribe-text">Subscribe</label>
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                id="email"
+                pattern=".+@example\.com"
+                size="30"
+                placeholder="E-mail"
+                required
+              />
+              <button type="submit" class="footer-subscribe-button">
+                Subscribe<svg class="footer-send-icon">
+                  <use href="./images/svgsprite/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
