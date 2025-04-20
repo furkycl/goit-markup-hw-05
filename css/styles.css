@@ -671,14 +671,14 @@ fieldset {
 }
 
 #agreement:checked + label::after {
-  content: "";
+  content: "X";
   position: absolute;
   width: 16px;
   height: 16px;
   background-image: url(../images/svgsprite/checkbox.svg#icon-checkbox);
   background-size: contain;
-  left: 0;
-  top: 0;
+  left: 3px;
+  top: -4px;
 }
 
 .dialog-agreement-text {
