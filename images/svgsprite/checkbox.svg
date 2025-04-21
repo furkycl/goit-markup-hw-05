@@ -5,3 +5,8 @@
     </symbol>
   </defs>
 </svg>
+<symbol id="icon-close" viewBox="0 0 32 32">
+      <path fill="#e7e9fc" d="M32 16a16 16 0 1 1-32 0 16 16 0 0 1 32 0z" style="fill: var(--color1, #e7e9fc)"/>
+      <path fill="none" stroke="#0000001a" stroke-width="1" d="M31.3 16A15.3 15.3 0 1 1 .7 16a15.3 15.3 0 0 1 30.6 0z" style="stroke: var(--color2, #0000001a)"/>
+      <path fill="#2e2f42" d="m21.3 11.7-1-1-4.3 4.2-4.3-4.2-1 1 4.2 4.3-4.2 4.3 1 1 4.3-4.2 4.3 4.2 1-1-4.2-4.3 4.2-4.3z" style="fill: var(--color3, #2e2f42)"/>
+    </symbol>

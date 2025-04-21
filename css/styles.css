@@ -551,6 +551,10 @@ h1 {
   top: 24px;
 }
 
+.form-dialog-icon-close:active {
+  fill: #fff;
+}
+
 .form-container {
   padding: 0 24px;
 }
@@ -648,6 +652,8 @@ fieldset {
   display: inline-block;
   color: #8e8f99;
   line-height: 25px;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 #agreement + label::before {
@@ -666,19 +672,25 @@ fieldset {
   width: 16px;
   height: 16px;
   outline: 2px solid #4d5ae5;
+  border-radius: 2px;
   left: 0;
   top: 0;
 }
 
 #agreement:checked + label::after {
-  content: "X";
+  content: " \2713";
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
   position: absolute;
   width: 16px;
   height: 16px;
-  background-image: url(../images/svgsprite/checkbox.svg#icon-checkbox);
-  background-size: contain;
-  left: 3px;
-  top: -4px;
+  background-color: #404bbf;
+  left: 0;
+  top: 0;
+  border: 1px solid #404bbf;
+  border-radius: 2px;
+  line-height: 1;
 }
 
 .dialog-agreement-text {
