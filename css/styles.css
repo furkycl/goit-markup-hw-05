@@ -541,6 +541,7 @@ h1 {
   margin-bottom: 16px;
 }
 
+/* Make this class comment because couldn't use fill for background
 .form-dialog-icon-close {
   cursor: pointer;
   height: 24px;
@@ -549,6 +550,35 @@ h1 {
   position: absolute;
   right: 24px;
   top: 24px;
+}
+  */
+
+/* Instead of take X as a svg with background I took itself*/
+
+.x-div {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+  align-content: center;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: #e7e9fc;
+}
+
+.x-div:active {
+  background-color: #404bbf;
+}
+
+.x {
+  width: 8px;
+  height: 8px;
+  fill: #2e2f42;
+}
+.x:active {
+  fill: #fff;
 }
 
 .form-dialog-icon-close:active {
